@@ -19,7 +19,7 @@
  *     RAND_MAX.
  *
  * Author: E. Chris Pedro
- * Date: 2017-03-13
+ * Version: 2017-03-13
  */
 
 #include <stdio.h>

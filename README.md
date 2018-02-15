@@ -6,5 +6,6 @@ A stand-alone C program that approximates the value of π by using the mathmatic
 This program generates pairs of random numbers for a given number of iterations, and then gets the percentage of those numbers that were co-prime and then uses this number to aproximate π.
 
 Inspired by a video from Matt Parker (standupmaths) for Pi Day, 2017.  
-
 Link: https://www.youtube.com/watch?v=RZBhSi_PwHU
+
+Info on the proof: https://www.cut-the-knot.org/m/Probability/TwoCoprime.shtml

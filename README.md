@@ -56,3 +56,37 @@ Pi real value is 3.141593
 Percentage difference is 0.005995%
 ```
 
+The DEBUG macro can be defined during compile time to cause the program to
+output pairs generated along with the running state of the co-prime count.
+
+```
+$ gcc -DDEBUG pi_by_coprime.c -o approxpi
+$ ./approxpi 10 10
+Pair 1 generated: <7,7>
+  Co-prime count is at 0
+Pair 2 generated: <7,6>
+  Co-prime count is at 1
+Pair 3 generated: <3,6>
+  Co-prime count is at 1
+Pair 4 generated: <6,3>
+  Co-prime count is at 1
+Pair 5 generated: <7,10>
+  Co-prime count is at 2
+Pair 6 generated: <4,10>
+  Co-prime count is at 2
+Pair 7 generated: <2,7>
+  Co-prime count is at 3
+Pair 8 generated: <2,3>
+  Co-prime count is at 4
+Pair 9 generated: <4,5>
+  Co-prime count is at 5
+Pair 10 generated: <2,9>
+  Co-prime count is at 6
+Generated 10 pairs of random numbers between 1 and 10
+Number of co-primes pairs: 6
+----------------------------
+Pi approximation is 3.162278
+Pi real value is 3.141593
+Percentage difference is 0.656264%
+```
+

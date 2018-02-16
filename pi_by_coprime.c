@@ -20,7 +20,7 @@
  *     LONG_MAX from limits.h.
  *
  * Author: E. Chris Pedro
- * Version: 2017-03-13
+ * Version: 2018-02-16
  */
 
 #include <stdio.h>

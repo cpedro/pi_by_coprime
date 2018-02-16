@@ -10,9 +10,6 @@ and then gets the percentage of those numbers that were co-prime and then uses
 this number to aproximate π.
 
 Inspired by a video from Matt Parker (standupmaths) for Pi Day, 2017.
-
-<https://www.youtube.com/watch?v=RZBhSi_PwHU>
-
 [![Generating π from 1,000 random numbers](http://img.youtube.com/vi/RZBhSi_PwHU/0.jpg)](http://www.youtube.com/watch?v=RZBhSi_PwHU)
 
 Info on the proof: <https://www.cut-the-knot.org/m/Probability/TwoCoprime.shtml>

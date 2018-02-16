@@ -15,8 +15,9 @@
  *   <pairs> - generate this number of random pairs to approximate pi.  This
  *     number must be greater than 10.
  *   [<max_number>] - Optional, specify maximum number for the random number.
+ *     This number must be greater than 10.
  *     If no max_number is speficied, numbers will be generated between 1 and 
- *     RAND_MAX.
+ *     LONG_MAX from limits.h.
  *
  * Author: E. Chris Pedro
  * Version: 2017-03-13
@@ -82,6 +83,11 @@ void approx_pi(int pairs, long max_number)
 
     if (gcd(++rand1, ++rand2) == 1)
       ++sum_coprime;
+
+#ifdef DEBUG
+    printf("Pair %d generated: <%ld,%ld>\n", (i + 1), rand1, rand2);
+    printf("  Co-prime count is at %d\n", sum_coprime);
+#endif
   }
 
   /* Approximate pi */
@@ -120,7 +126,13 @@ int main(int argc, char *argv[])
 
   if (pairs < 10)
   {
-    printf("%d must be greater than 10.\n", pairs);
+    fprintf(stderr, "<pairs> must be greater than 10.\n");
+    return EXIT_FAILURE;
+  }
+
+  if (max_number < 10)
+  {
+    fprintf(stderr, "<max_number> must be greater than 10.\n");
     return EXIT_FAILURE;
   }
 

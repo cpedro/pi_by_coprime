@@ -21,17 +21,17 @@ $ gcc pi_by_coprime.c -o approxpi
 ```
 
 At a minimum, you have to give the program the number of random integer pairs to
-generate.  You can also specify the maximum number when generating a random
-number as a second command line parameter.  If `max_number` is not specified,
-`LONG_MAX` from `limits.h` will be used.  Random numbers that are generated will
-be between 1 and `max_number`.
+generate (must be >= 10).  You can also specify the maximum number when
+generating a random number as a second command line parameter.  If `max_number`
+is not specified, `LONG_MAX` from `limits.h` will be used.  Random numbers that
+are generated will be between 1 and `max_number`.
 
 ```
 $ ./approxpi
 usage: ./approxpi <pairs> [<max_number>]
 ```
 
-Output will show the number of pair, along with the range, the number of pairs
+Output will show the number of pairs, along with the range, the number of pairs
 that were co-prime.  Then it will output the approximation of Pi calculated,
 along with the "real" value from `math.h` and the percentage difference between
 our calculated approximation and the real value.

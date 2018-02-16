@@ -11,11 +11,9 @@ this number to aproximate π.
 
 Inspired by a video from Matt Parker (standupmaths) for Pi Day, 2017.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=RZBhSi_PwHU
-" target="_blank"><img src="http://img.youtube.com/vi/RZBhSi_PwHU/0.jpg" 
-alt="Generating π from 1,000 random numbers" width="240" height="180" border="10" /></a>
+<https://www.youtube.com/watch?v=RZBhSi_PwHU>
 
-(<https://www.youtube.com/watch?v=RZBhSi_PwHU>)
+[![Generating π from 1,000 random numbers](http://img.youtube.com/vi/RZBhSi_PwHU/0.jpg)](http://www.youtube.com/watch?v=RZBhSi_PwHU)
 
 Info on the proof: <https://www.cut-the-knot.org/m/Probability/TwoCoprime.shtml>
 

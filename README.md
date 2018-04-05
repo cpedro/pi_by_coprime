@@ -1,5 +1,4 @@
-Pi by Co-prime
-==============
+# Pi by Co-prime
 
 A stand-alone C program that approximates the value of π by using the
 mathmatical proof that states that the probability that two random numbers are
@@ -14,8 +13,8 @@ Inspired by a video from Matt Parker (standupmaths) for Pi Day, 2017.
 
 Info on the proof: <https://www.cut-the-knot.org/m/Probability/TwoCoprime.shtml>
 
-Compiling and Running
----------------------
+##Compiling and Running
+
 ```
 $ gcc pi_by_coprime.c -o approxpi
 ```

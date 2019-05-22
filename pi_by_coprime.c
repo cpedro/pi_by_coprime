@@ -53,16 +53,16 @@
 
 /**
  * gcd - Uses Euclid's Algorithm to recursively calculate the GCD of two
- *       numbers, m and n
- * @m: integer 1
- * @n: integer 2
+ *       numbers, a and b
+ * @a: integer 1
+ * @b: integer 2
  * Return the GCD of m and n as an integer.
  */
-long gcd(long m, long n)
+long gcd(long a, long b)
 {
-  if (m == 0) 
-    return n;
-  return gcd(n % m, m);
+  if (b == 0)
+    return a;
+  return gcd(b, a % b);
 }
 
 /**
